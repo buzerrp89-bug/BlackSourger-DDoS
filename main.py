@@ -8,6 +8,7 @@ import threading
 import random
 import socket
 import argparse
+import fade
 import ssl
 from urllib.parse import urlparse
 
