@@ -1,13 +1,43 @@
+# _*_ coding: utf-8 _*_
+# python3.12
 
-
-import socket
-import threading
+import os
 import time
 import sys
+import threading
 import random
+import socket
 import argparse
 import ssl
 from urllib.parse import urlparse
+
+
+attemps = 0
+os.system( 'clear' )
+logo = """ 
+      ████╗ █████╗   
+     █╔═══█╗█╔═══█╗ \033[1;32m█████╗ █╗   █╗   ████  
+     █║   █║█║   █║\033[1;32m█╔════█╗█║   █║ █     █  █     █  
+     █║   █║█║   █║\033[1;32m█║    █║█║   █║ █      █
+     ██████║█████╝ \033[1;32m█║    █║█║   █║ █      █
+     █╔═══█║█╔══█╗ \033[1;32m█║    █║█║   █║ █      █
+     █║   █║█║   █║ \033[1;32m█████╔╝  ████║    ████
+     ╚╝   ╚╝╚╝   ╚╝ \033[1;32m╚════╝      █║  
+                                            ████║
+											╚═══╝"""
+faded_text = fade.fire(logo)
+print(faded_text)
+while attemps < 100:
+        username = input("\033[32m┏> Enter your username: \033[0m")
+        password = input("\033[32m┗> Enter your password: \033[0m")
+
+        if username == 'kun' and password == 'kun':
+            print("\033[48;5;3m•••⟩⟩ R U A N G  P E J U A N G ...!!\033[0m")
+            break
+        else:
+            print('Incorrect credentials. Check if you have Caps lock on and try again.')
+            attemps += 1
+            continue
 
 # Multiple user agents for variety
 USER_AGENTS = [
