@@ -32,7 +32,7 @@ while attemps < 100:
         username = input("\033[32m┏> Enter your username: \033[0m")
         password = input("\033[32m┗> Enter your password: \033[0m")
 
-        if username == 'kun' and password == 'kun':
+        if username == 'kun' and password == '99':
             print("\033[48;5;3m•••⟩⟩ R U A N G  P E J U A N G ...!!\033[0m")
             break
         else:
